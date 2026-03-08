@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lahore Food Guide</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    color:#222;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(255,255,255,0.95);
+    z-index:1000;
+}
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+/* HEADER */
+.header{
+    height:60vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("images/HAVELI.jpeg")
+    center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:0 60px;
+    color:white;
+}
+.header h1{
+    font-size:48px;
+}
+
+/* SECTION */
+section{
+    padding:100px 60px 70px;
+}
+section h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:transform 0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card h3{
+    padding:15px 15px 0;
+}
+.card p{
+    padding:10px 15px 20px;
+    color:#555;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Explore Lahore</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="food.html">Food</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Lahore Food Guide</h1>
+</div>
+
+<!-- FOOD SECTION -->
+<section>
+    <h2>Must-Visit Food Places</h2>
+
+    <div class="grid">
+
+        
+        <div class="card">
+            <img src="images/HAVELI.jpeg">
+            <h3>Haveli Restaurant</h3>
+            <p>Famous rooftop dining with authentic Pakistani cuisine.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/buttkarahi.jpeg">
+            <h3>Butt Karahi</h3>
+            <p>Legendary karahi loved by locals and tourists alike.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/tuscany.jpeg">
+            <h3>Tuscany Courtyard</h3>
+            <p>A Tuscany Courtyard is a stylish Italian restaurant in Lahore, known for its elegant ambience and authentic Italian cuisine.</p>
+        </div>
+       
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Explore Lahore | ICT Project</p>
+</footer>
+
+</body>
+</html>
